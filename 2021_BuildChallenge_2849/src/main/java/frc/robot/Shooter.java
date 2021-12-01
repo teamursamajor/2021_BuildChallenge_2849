@@ -8,4 +8,8 @@ class Shooter implements UrsaRobot {
     public Shooter() {
         shooterSpark = new Spark(UrsaRobot.SHOOTER_PORT);
     }
+
+    public void readControls() {
+        
+    }
 }
