@@ -25,6 +25,7 @@ public class Robot extends TimedRobot {
   private final SendableChooser<String> m_chooser = new SendableChooser<>();
 
   private final Shooter SHOOTER_SUB = new Shooter();
+  private final Drive DRIVE_SUB = new Drive();
 
   /**
    * This function is run when the robot is first started up and should be
@@ -89,6 +90,7 @@ public class Robot extends TimedRobot {
   @Override
   public void teleopPeriodic() {
     SHOOTER_SUB.readControls();
+    DRIVE_SUB.readControls();
   }
 
   /**
