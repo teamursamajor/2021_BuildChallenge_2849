@@ -89,6 +89,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopPeriodic() {
+    System.out.println("reading controls");
     SHOOTER_SUB.readControls();
     DRIVE_SUB.readControls();
   }
